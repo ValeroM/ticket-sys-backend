@@ -1,0 +1,20 @@
+{
+  "development": {
+    "username": "marco_dev_user",
+    "password": "marco_dev_pass",
+    "database": "marco_dev_db",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "marco_test_user",
+    "password": "marco_test_pass",
+    "database": "marco_test_db",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres"
+  }
+}
