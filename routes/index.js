@@ -6,7 +6,7 @@ const routes = () => {
   app.use("/ticket", require("./tickets-file")());
 
   app.use("/", (req, res, next) => {
-    console.log("You have hit [GET] /api endpoint");
+    console.log("You have hit [GET] / endpoint");
     let responseMessage = "Welcome to the Ticket System API";
     console.log("Sending back the following message:\n" + responseMessage);
     return res.status(200).send(responseMessage);
@@ -16,7 +16,7 @@ const routes = () => {
 };
 
 const attachRoutes = app => {
-  app.use("/api", routes());
+  app.use("/", routes());
 };
 
 module.exports = attachRoutes;
