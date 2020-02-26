@@ -4,7 +4,6 @@ dotenv.config('../../.env');
 const { Ticket } = db;
 const client = require("twilio")(process.env.TWILIO_ACC_SID, process.env.TWILIO_TOKEN);
 
-
 const setup = () => {
 
   const logEndPoint = (req, res, next) => {
