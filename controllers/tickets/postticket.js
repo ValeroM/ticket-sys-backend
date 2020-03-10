@@ -32,7 +32,7 @@ const setup = () => {
       body: `New ticket received on ${ticketCreated.createdAt}.\nRoom: ${ticketCreated.room_num}\nFloor: ${ticketCreated.floor_num}\nIssue: ${ticketCreated.issue}\nDescription:\n${ticketCreated.desc}`
     })
       .then(message => {
-        console.log(message.sid);
+        // console.log(message.sid);
         res.status(200);
       })
       .catch(err => {
