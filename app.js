@@ -9,7 +9,7 @@ app.use(bodyParser.json()); //  basically tells the system that we want json to 
 const port = process.env.PORT || 7000;
 
 app.use(function (req, res, next) {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Origin', 'https://ps48tickets.herokuapp.com/');
   res.header(
     'Access-Control-Allow-Headers',
     'Origin, X-Requested-With, Content-Type, Accept'
